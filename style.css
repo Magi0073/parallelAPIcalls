@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+input, select, button {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+li {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 250px;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(-20px);
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.toast.success {
+    background-color: #28a745;
+}
+
+.toast.error {
+    background-color: #dc3545;
+}
+
+.app-container {
+    background: #ffffff;
+    width: 600px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 6px solid #667eea;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge.total {
+    background: #007bff;
+}
+
+.badge.completed {
+    background: #28a745;
+}
+
+.badge.overdue {
+    background: #dc3545;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App - Parallel Promise Matching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="app-container">
+    <body>
+<div class="section">
+    <h2>👤 Create User</h2>
+
+    <div class="form-row">
+        <input type="text" id="userInput" placeholder="User name">
+        <button type="button" onclick="addUser()">Add User</button>
+    </div>
+</div>
+
+
+<div class="section">
+<h2>📝 Create Task</h2>
+<input type="text" id="taskInput" placeholder="Task name">
+<input type="date" id="dueDateInput">
+<button onclick="addTask()">Add Task</button>
+</div>
+<div class="section">
+<h2>🔗 Assign Task to User</h2>
+<select id="taskSelect"></select>
+<select id="userSelect"></select>
+<button onclick="assignTask()">Assign</button>
+</div>
+
+<div class="section">
+<h2>📋 Task List</h2>
+<h3 id="summary"></h3>
+
+<ul id="taskList"></ul>
+<!-- Toast Notification -->
+<div id="toast" class="toast"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</div>
+
+
+</html>
